@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: Man_Sabreen01Project
+  gitBranch: master
+configurationVariables:
+  jdbcfunc.SAPTxStore.failFastMode: false
+  jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
