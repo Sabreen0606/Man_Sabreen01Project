@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">connectorAccount</value>
+  <value name="node_subtype">soap</value>
+  <value name="node_nsName">project.man_sabreen01.soap.connections:Test1</value>
+  <value name="node_pkg">Man_Sabreen01Project</value>
+  <value name="is_public">false</value>
+  <value name="assetId">Man_Sabreen01Project.project.man_sabreen01.soap.connections:Test1</value>
+  <value name="connectionName">Test1</value>
+  <value name="description"></value>
+  <value name="connectorNSName">project.man_sabreen01.soap.connectors:calci_soap1</value>
+  <value name="port"></value>
+  <value name="url"></value>
+  <value name="timeout"></value>
+  <value name="transportType"></value>
+  <value name="transportUser"></value>
+  <value name="transportPass"></value>
+  <value name="transportServerCertsKeystoreAlias"></value>
+  <value name="transportServerCertsKeyAlias"></value>
+  <value name="messageUser"></value>
+  <value name="messagePass"></value>
+  <value name="messageServerCertsKeystoreAlias"></value>
+  <value name="messageServerCertsKeyAlias"></value>
+</Values>
