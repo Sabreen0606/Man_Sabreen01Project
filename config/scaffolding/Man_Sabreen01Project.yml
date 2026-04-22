@@ -4,6 +4,35 @@ info:
 packages:
 - name: Man_Sabreen01Project
   gitBranch: master
+services:
+- serviceName: project.man_sabreen01.soap.connections:Test1
+  packages:
+  - name: Man_Sabreen01Project
+    version: "1.0"
+- serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.connectors:GlobalWeatherSoap_GetCitiesByCountry
+  packages:
+  - name: Man_Sabreen01Project
+    version: "1.0"
+- serviceName: pub.client:soapClient
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.832
+- serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.connectors:GlobalWeatherSoap_GetWeather
+  packages:
+  - name: Man_Sabreen01Project
+    version: "1.0"
+- serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.responseServices:GlobalWeatherSoap_GetCitiesByCountry_Response
+  packages:
+  - name: Man_Sabreen01Project
+    version: "1.0"
+- serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.responseServices:GlobalWeatherSoap_GetWeather_Response
+  packages:
+  - name: Man_Sabreen01Project
+    version: "1.0"
+- serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.responseServices:genericFault_Response
+  packages:
+  - name: Man_Sabreen01Project
+    version: "1.0"
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
