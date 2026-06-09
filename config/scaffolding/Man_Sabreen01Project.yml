@@ -11,6 +11,10 @@ packages:
 - name: WmSalesforceRESTProvider
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+  wpmVersion: v10.3.10.21
 services:
 - serviceName: project.man_sabreen01.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:TestSales1
   packages:
@@ -65,10 +69,10 @@ services:
   - name: WmSalesforceProvider
     version: 12.0.0.0.17
 configurationVariables:
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.poolable
-  : "true"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.minimumPoolSize
   : "1"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.poolable
+  : "true"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.startupRetryCount
   : "0"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.poolIncrementSize
