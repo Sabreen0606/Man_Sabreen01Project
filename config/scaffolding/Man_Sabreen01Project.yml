@@ -9,166 +9,150 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 - name: WmSalesforceRESTProvider
+  version: 12.0.0.0.16
   wpmServer: https://packages.webmethods.io
   wpmRegistry: supported
 - name: WmJDBCAdapter
+  version: 10.3.0.0.34
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
   wpmVersion: v10.3.10.21
+- name: Punith_KMAT_Salesforce_Sync
+  gitServerName: Karthik
+  gitUrl: https://github.com/karthikbm
+  gitUsername: karthikbm
+  gitBranch: main
 services:
-- serviceName: project.man_sabreen01.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:TestSales1
-  packages:
-  - name: Man_Sabreen01Project
-    version: "1.0"
-  - name: WmSalesforceProvider
-    version: 12.0.0.0.17
-- serviceName: project.man_sabreen01.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:TestSales2
-  packages:
-  - name: Man_Sabreen01Project
-    version: "1.0"
-  - name: WmSalesforceProvider
-    version: 12.0.0.0.17
-- serviceName: project.man_sabreen01.soap.connections:Test1
-  packages:
-  - name: Man_Sabreen01Project
-    version: "1.0"
-  - name: WmSalesforceProvider
-    version: 12.0.0.0.17
 - serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.connectors:GlobalWeatherSoap_GetCitiesByCountry
   packages:
   - name: Man_Sabreen01Project
     version: "1.0"
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
   - name: WmSalesforceProvider
-    version: 12.0.0.0.17
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.21
 - serviceName: pub.client:soapClient
   packages:
   - name: WmPublic
-    version: 12.1.0.0.832
+    version: 12.1.0.0.1126
 - serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.connectors:GlobalWeatherSoap_GetWeather
   packages:
   - name: Man_Sabreen01Project
     version: "1.0"
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
   - name: WmSalesforceProvider
-    version: 12.0.0.0.17
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.21
 - serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.responseServices:GlobalWeatherSoap_GetCitiesByCountry_Response
   packages:
   - name: Man_Sabreen01Project
     version: "1.0"
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
   - name: WmSalesforceProvider
-    version: 12.0.0.0.17
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.21
 - serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.responseServices:GlobalWeatherSoap_GetWeather_Response
   packages:
   - name: Man_Sabreen01Project
     version: "1.0"
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
   - name: WmSalesforceProvider
-    version: 12.0.0.0.17
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.21
 - serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.responseServices:genericFault_Response
   packages:
   - name: Man_Sabreen01Project
     version: "1.0"
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
   - name: WmSalesforceProvider
-    version: 12.0.0.0.17
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.21
 configurationVariables:
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.minimumPoolSize
-  : "1"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.poolable
   : "true"
+  jdbc.SAP TxStore Pool.maxConns: "10"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.startupRetryCount
   : "0"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.poolIncrementSize
   : "1"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.blockTimeout
-  : "1000"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cr.username
-  : rithi@softwareag.com
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.allowCircularRedirects
-  : "true"
-  jdbcfunc.SAPTxStore.failFastMode: false
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cr.username
-  : rithi@softwareag.com
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.tcpNoDelay
   : "false"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.pr.userAgent
   : Cloudstreams
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.rh.requestHeaderNames
   : "Content-Type,SOAPAction"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.tcpNoDelay
-  : "false"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cr.preemptiveAuthEnabled
-  : "false"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.protocolVersion
-  : HTTP/1.1
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.retryIfRequestSentOk
   : "true"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.serverRedirectMax
-  : "5"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.rh.requestHeaderValues
   : "text/xml,login"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.providerUrl
   : https://login.salesforce.com/services/Soap/u/53.0
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.hostnameVerifier
-  : org.apache.http.conn.ssl.DefaultHostnameVerifier
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.keepAliveInterval
-  : "300000"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.enableSNI
-  : "true"
+  jdbc.SAP TxStore Pool.password: "{AES}7EzrljL+N3kbQseeO6Awng=="
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.enableSNI
   : "true"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.rh.requestHeaderNames
   : "Content-Type,SOAPAction"
+  jdbc.SAP TxStore Pool.spyparms: SpyAttributes=(log=(file)logs/spy/SAP_TxStore_Pool.log;logTName=yes;timestamp=yes)
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.sockBuffSize
   : "8192"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.socketStaleCheck
-  : "true"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.startupRetryCount
   : "0"
+  jdbc.SAP TxStore Pool.snoopenabled: "false"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.startupBackoffSecs
   : "10"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.timeoutType
   : fixed
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.poolable
   : "true"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.pr.httpContentCharSet
-  : ISO-8859-1
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.timeoutType
   : fixed
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.startupBackoffSecs
-  : "10"
+  jdbc.SAP TxStore Pool.expireTime: "60000"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.expireTimeout
   : "1000"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.sessionExpiry
-  : "14"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.maximumPoolSize
   : "10"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.rh.requestHeaderValues
   : "text/xml,login"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.pr.followServerRedirects
-  : "true"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.providerUrl
-  : https://login.salesforce.com/services/Soap/u/53.0
+  jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.followServerRedirects
   : "true"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.httpContentCharSet
-  : ISO-8859-1
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.validateAfterInactivity
   : "1000"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.useExpectCont
   : "false"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.useChunking
-  : "false"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.keepAliveInterval
-  : "300000"
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.pr.useChunking
   : "false"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.blockTimeout
-  : "1000"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.connectTimeout
-  : "180000"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.expireTimeout
-  : "1000"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.retryCount
-  : "3"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.connectionEnabled
   : "true"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.validateAfterInactivity
@@ -177,44 +161,108 @@ configurationVariables:
   : Cloudstreams
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.socketLinger
   : "-1"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.enableCompression
-  : "false"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.sessionExpiry
-  : "14"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.retryCount
-  : "3"
+  jdbc.SAP TxStore Pool.waitingThread: "10"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cr.preemptiveAuthEnabled
   : "false"
+  jdbc.SAP TxStore Pool.description: Connection Pool for the SAP Transaction Store
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.retryIfRequestSentOk
   : "true"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.pr.protocolVersion
-  : HTTP/1.1
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.socketStaleCheck
   : "true"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cr.password
   : "{AES}OYSjbNfOLUKJAT+MWJt0w3FPbUooYAcCzhGF0UMKgsfxDQ1MMLJvU+e5tmiaXP+/"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.poolIncrementSize
-  : "1"
+  jdbc.SAP TxStore Pool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/SAP_TxStore_Pool.log;ddtdbg.ProtocolTraceShowTime=true
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.pr.useExpectCont
   : "false"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.connectTimeout
   : "180000"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cr.password
   : "{AES}OYSjbNfOLUKJAT+MWJt0w3FPbUooYAcCzhGF0UMKgsfxDQ1MMLJvU+e5tmiaXP+/"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.reuseAddr
-  : "false"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cr.authSchemeType
-  : none
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.readTimeout
-  : "180000"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.reuseAddr
   : "false"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.idleTimeout
-  : "-1"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.readTimeout
+  : "180000"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.maximumPoolSize
   : "10"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cr.authSchemeType
   : none
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.idleTimeout
+  : "-1"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.minimumPoolSize
+  : "1"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cr.username
+  : rithi@softwareag.com
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.allowCircularRedirects
+  : "true"
+  jdbcfunc.SAPTxStore.failFastMode: false
+  jdbc.SAP TxStore Pool.poolThreshold: "0"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cr.username
+  : rithi@softwareag.com
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.tcpNoDelay
+  : "false"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cr.preemptiveAuthEnabled
+  : "false"
+  jdbc.SAP TxStore Pool.spyenabled: "false"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.protocolVersion
+  : HTTP/1.1
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.serverRedirectMax
+  : "5"
+  jdbc.SAP TxStore Pool.useSSL: "false"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.hostnameVerifier
+  : org.apache.http.conn.ssl.DefaultHostnameVerifier
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.enableSNI
+  : "true"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.socketStaleCheck
+  : "true"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.pr.httpContentCharSet
+  : ISO-8859-1
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.startupBackoffSecs
+  : "10"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.sessionExpiry
+  : "14"
+  jdbc.SAP TxStore Pool.minConns: "5"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.pr.followServerRedirects
+  : "true"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.providerUrl
+  : https://login.salesforce.com/services/Soap/u/53.0
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.httpContentCharSet
+  : ISO-8859-1
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.useChunking
+  : "false"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.keepAliveInterval
+  : "300000"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.blockTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.connectTimeout
+  : "180000"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.expireTimeout
+  : "1000"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.retryCount
+  : "3"
+  jdbc.SAP TxStore Pool.dbURL: jdbc:mysql://adapter-mysql-80-on-amazonrds.cdmjexwbzoym.us-east-1.rds.amazonaws.com:3306/SAPTRANSACTIONSTORE?useSSL=false&characterEncoding=utf-8&autoReconnect=true&maxReconnects=5&sessionVariables=wait_timeout=2147483
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.enableCompression
+  : "false"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.sessionExpiry
+  : "14"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.retryCount
+  : "3"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.pr.protocolVersion
+  : HTTP/1.1
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.poolIncrementSize
+  : "1"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.reuseAddr
+  : "false"
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cr.authSchemeType
+  : none
+  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.idleTimeout
+  : "-1"
+  jdbc.SAP TxStore Pool.userid: sapuser
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.enableCompression
   : "false"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.pr.serverRedirectMax
@@ -225,12 +273,8 @@ configurationVariables:
   : "180000"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.socketLinger
   : "-1"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.minimumPoolSize
-  : "1"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.cn.sockBuffSize
   : "8192"
-  ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.idleTimeout
-  : "-1"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.connectionEnabled
   : "true"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.hostnameVerifier
