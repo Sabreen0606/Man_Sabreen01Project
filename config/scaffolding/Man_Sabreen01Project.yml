@@ -21,11 +21,26 @@ packages:
   wpmRegistry: licensed
   wpmVersion: v10.3.10.21
 - name: Punith_KMAT_Salesforce_Sync
+  version: "1.0"
   gitServerName: kritika_private
   gitUrl: https://github.com/karthikbm
   gitUsername: Kritika-Shaw
   gitBranch: main
 services:
+- serviceName: project.man_sabreen01.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:TestS1
+  packages:
+  - name: Man_Sabreen01Project
+    version: "1.0"
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.24
 - serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.connectors:GlobalWeatherSoap_GetCitiesByCountry
   packages:
   - name: Man_Sabreen01Project
@@ -39,11 +54,11 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
-    version: 12.0.0.0.21
+    version: 12.0.0.0.24
 - serviceName: pub.client:soapClient
   packages:
   - name: WmPublic
-    version: 12.1.0.0.1126
+    version: 12.1.0.0.1135
 - serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.connectors:GlobalWeatherSoap_GetWeather
   packages:
   - name: Man_Sabreen01Project
@@ -57,7 +72,7 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
-    version: 12.0.0.0.21
+    version: 12.0.0.0.24
 - serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.responseServices:GlobalWeatherSoap_GetCitiesByCountry_Response
   packages:
   - name: Man_Sabreen01Project
@@ -71,7 +86,7 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
-    version: 12.0.0.0.21
+    version: 12.0.0.0.24
 - serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.responseServices:GlobalWeatherSoap_GetWeather_Response
   packages:
   - name: Man_Sabreen01Project
@@ -85,7 +100,7 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
-    version: 12.0.0.0.21
+    version: 12.0.0.0.24
 - serviceName: project.man_sabreen01.soap.connectors.calci_soap1_.responseServices:genericFault_Response
   packages:
   - name: Man_Sabreen01Project
@@ -99,11 +114,11 @@ services:
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
   - name: WmSalesforceRESTProvider
-    version: 12.0.0.0.21
+    version: 12.0.0.0.24
 configurationVariables:
-  jdbc.SAP TxStore Pool.maxConns: "10"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.poolable
   : "true"
+  jdbc.SAP TxStore Pool.maxConns: "10"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.startupRetryCount
   : "0"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.poolIncrementSize
@@ -139,14 +154,14 @@ configurationVariables:
   : "true"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.timeoutType
   : fixed
+  jdbc.SAP TxStore Pool.expireTime: "60000"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.expireTimeout
   : "1000"
-  jdbc.SAP TxStore Pool.expireTime: "60000"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.maximumPoolSize
   : "10"
-  jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales1.rh.requestHeaderValues
   : "text/xml,login"
+  jdbc.SAP TxStore Pool.driverAlias: MySQL CC Driver
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.pr.followServerRedirects
   : "true"
   ? cloudstreamsconnection.project..man_sabreen01..WmSalesforceProvider..com_webmethods_cloudstreams_salesforce_v53..connections:TestSales2.cn.validateAfterInactivity
