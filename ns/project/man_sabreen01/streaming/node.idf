@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">interface</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">project.man_sabreen01.streaming</value>
+  <value name="node_pkg">Man_Sabreen01Project</value>
+  <record name="node_hints" javaclass="com.wm.util.Values">
+    <value name="createdBy">Sabreen.Irfana@ibm.com</value>
+    <value name="modifiedBy">Sabreen.Irfana@ibm.com</value>
+    <value name="createdDate">2026-09-25T07:02:09.931111105Z</value>
+    <value name="lastModifiedDate">2026-09-25T07:02:09.931111105Z</value>
+  </record>
+  <value name="is_public">false</value>
+</Values>
