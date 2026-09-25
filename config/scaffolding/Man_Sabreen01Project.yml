@@ -27,6 +27,20 @@ packages:
   gitUsername: Kritika-Shaw
   gitBranch: main
 services:
+- serviceName: project.man_sabreen01.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:TestS2
+  packages:
+  - name: Man_Sabreen01Project
+    version: "1.0"
+  - name: Punith_KMAT_Salesforce_Sync
+    version: "1.0"
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.23
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.24
 - serviceName: project.man_sabreen01.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:Testcon1
   packages:
   - name: Man_Sabreen01Project
