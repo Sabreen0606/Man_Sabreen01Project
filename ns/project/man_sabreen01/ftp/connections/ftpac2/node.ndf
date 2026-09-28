@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">connectorAccount</value>
+  <value name="node_subtype">ftpAccount</value>
+  <value name="node_nsName">project.man_sabreen01.ftp.connections:ftpac2</value>
+  <value name="node_pkg">Man_Sabreen01Project</value>
+  <value name="is_public">false</value>
+  <record name="accountDetails" javaclass="com.wm.util.Values">
+    <null name="agentGroup"/>
+    <value name="agentId">8cfd052cd0d048b99ea8dfa27454d426</value>
+    <value name="connectionName">ftpac2</value>
+    <value name="connectionType">sagcloud</value>
+    <value name="connectorID">ftpconnector</value>
+    <value name="connectorType">ftp</value>
+    <value name="description"></value>
+    <null name="instanceId"/>
+    <value name="keyAlias"></value>
+    <value name="keystoreAlias"></value>
+    <value name="password">*****</value>
+    <value name="projectName">Man_Sabreen01</value>
+    <value name="providerName">TechnologyConnector</value>
+    <value name="serverhost">demo.wftpserver.com</value>
+    <value name="serverport">21</value>
+    <value name="timeout">60</value>
+    <value name="truststoreAlias"></value>
+    <null name="updateAsset"/>
+    <value name="username">demo</value>
+    <value name="passwordhandle">wm.is.admin.project.man_sabreen01.ftp.connections:ftpac2</value>
+  </record>
+  <value name="assetId">Man_Sabreen01Project.project.man_sabreen01.ftp.connections:ftpac2</value>
+  <record name="node_hints" javaclass="com.wm.util.Values">
+    <value name="createdBy">Sabreen.Irfana@ibm.com</value>
+    <value name="modifiedBy">Sabreen.Irfana@ibm.com</value>
+    <value name="createdDate">2026-09-28T06:29:11.507389129Z</value>
+    <value name="lastModifiedDate">2026-09-28T06:29:11.507389129Z</value>
+  </record>
+</Values>
